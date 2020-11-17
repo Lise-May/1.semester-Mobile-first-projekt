@@ -1,0 +1,202 @@
+/* ------------------------------------------------------------------ Underside : behandlinger ----------------------------------*/
+.main_behandlinger, .behandlinger{
+    color: black;
+    background-color: #ece8dd;
+    height: 100%;
+}
+
+.behandling_overskrift{
+    font-size: 60px;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.behandling_underoverskrift {
+    font-size: 40px;
+    text-align: center;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.behandlingbilleder {
+    display: grid;
+    width: 200px;
+    margin: 50px auto 10px auto;
+    border: 3px solid goldenrod;
+    
+}
+/* ------------------- */
+
+/* -----------Tabel til priser----------------- */
+.tabel {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    border-spacing: 2px;
+    padding-left: 230px;
+}
+
+.tabel_body{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.tabel_sektion {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.tabel_celle{
+    display: table-cell;
+    vertical-align: inherit;
+    font-size: 25px;
+    padding-right: 200px;
+    padding-bottom: 10px;
+}
+
+.tabel_celle_vask_kr{
+    display: table-cell;
+    vertical-align: inherit;
+    font-size: 25px;
+    padding: 0px 150px 10px 170px;
+    }
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* --------------------------------media query tablet------------------------------------------------- */
+@media screen and (max-device-width: 950px) and (min-device-width: 672px){
+    .tabel {
+        display: table;
+        border-collapse: separate;
+        box-sizing: border-box;
+        border-spacing: 2px;
+        padding-left: 10px;
+    }
+
+    .tabel_celle_vask_kr{
+        display: table-cell;
+        vertical-align: inherit;
+        font-size: 25px;
+        padding: 0px 5px 10px 10px;
+    }
+
+    .tabel_celle{
+        display: table-cell;
+        vertical-align: inherit;
+        font-size: 25px;
+        padding: 0px 20px 10px 50px
+    }
+
+    .tabel_celle_vask_kr{
+        display: table-cell;
+        vertical-align: inherit;
+        font-size: 25px;
+        padding: 0px 70px 10px 250px;
+    }
+
+    .behandlinger{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row 
+    }
+
+    .behandlinge > .container_klip, .container_permanent {
+        flex: 1 1 45%;
+        height: 100%;
+        border-right: 2px solid gold;
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .behandlinger > .container_farve {
+        flex: 1 1 45%;
+        height: 100%;
+        border-left: 2px solid gold;
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .behandlinger > .container_bryn_vipper, .container_vask, .container_hårkur{
+        flex: 1 1 45%;
+        height: 100%;
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+/* -------------------------------------------------------------------------------------------------- */
+/* ---------------------------------- media query ipad pro + laptop ---------------------------------- */
+@media screen and (min-device-width: 950px) {
+    .tabel {
+        display: table;
+        border-collapse: separate;
+        box-sizing: border-box;
+        border-spacing: 2px;
+        padding-left: 10px;
+    }
+
+    .tabel_celle_vask_kr{
+        display: table-cell;
+        vertical-align: inherit;
+        font-size: 25px;
+        padding: 0% 5% 10px 10%;
+    }
+
+    .tabel_celle{
+        display: table-cell;
+        vertical-align: inherit;
+        font-size: 25px;
+        padding: 0% 0% 10px 2%;
+    }
+
+    .behandlinger{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    }
+
+    .behandlinger > .container_bryn_vipper, .container_hårkur, .container_permanent {
+        flex: 1 1 30%;
+        width: 200px;
+        height: 600px;
+        border-left: 2px solid gold;
+        margin-bottom: 20px;
+    }
+
+    .behandlinger >.container_klip, .container_vask {
+        flex: 1 1 30%;
+        width: 200px;
+        height: 600px;
+        margin-bottom: 20px;
+    }
+
+    .behandlinger > .container_farve {
+        flex: 1 1 30%;
+        width: 200px;
+        margin-bottom: 20px;
+        height: 1100px;
+        border-left: 2px solid gold;
+    }
+
+    .tabel_celle_vask_kr{
+    display: table-cell;
+    vertical-align: inherit;
+    font-size: 25px;
+    padding: 0px 150px 10px 200px;
+    }
+
+
+}
+
+
+
+
+
+
+
