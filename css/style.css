@@ -1,0 +1,834 @@
+/* --------------- generelt ---------------- */
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+	font-family: "times new roman";
+	background-color: #1c1c1c;
+	font-size: 100%;
+}
+
+/* ------- Overskrifter og brødtekst ------ */
+h1{
+	font-family: 'Tangerine', cursive;
+	text-align: center;
+  background: -webkit-linear-gradient(100deg, #ceac68, #8D4F00, #ceac68, #8D4F00, #ceac68);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	font-weight: 100;
+  	font-size: 3rem;
+}
+h2{
+	color: #ece8dd;
+	text-align: center;
+	font-weight: unset;
+	font-size: 20px;
+}
+h3{
+	padding-top: 2%;
+	color: #ece8dd;
+	text-align: center;
+	font-size: 1.5rem;
+}
+h4{
+  font-family: 'Tangerine', cursive;
+  text-align: center;
+  background: -webkit-linear-gradient(100deg, #ceac68, #8D4F00, #ceac68, #8D4F00, #ceac68);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 100;
+    font-size: 3rem;
+}
+h6{
+	padding: 0 10% 5% 10%;
+	color: #ece8dd;
+	text-align: center;
+	font-weight: 100;
+	text-decoration: none;
+}
+p{
+	color: #1c1c1c;
+	padding-top: 14px;
+	font-size: 20px;
+	font-style: normal;
+}
+/* --------------- Navigationsbar ------------- */
+.logo{
+	width: 70px;
+	float: right;
+	padding: 14px 14px 0 0;
+  z-index: 5;
+}
+.header{
+	height: 100px;
+}
+.topnav{
+  background-color: #1c1c1c;
+  z-index: 1;
+ }
+.topnav a{
+  text-align: center;
+  text-decoration: none;
+}
+.fa{
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.fa-bars{
+	background-image: url(../img/navicon.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 35px;
+	height: 35px;
+}
+.topnav a{
+	display: none;
+}
+.topnav a.icon {
+	position: absolute;
+  left: 14px; 
+  top: 34px;
+  display: block;
+}
+.topnav.responsive {
+  position: relative;
+}
+.topnav.responsive .icon {
+  position: absolute;
+  left: 14px; 
+  top: 34px;
+}
+ .topnav.responsive a {
+  display: block;
+}
+.menutekst{
+	padding-top: 25px;
+}
+li:first-child{
+	padding-top: 64px;
+}
+li:last-child{
+	padding-bottom: 20px;
+}
+ul {
+	list-style: none;
+}
+
+/* --------------- footer -------------- */
+.page_footer{
+	display: flex;
+	flex-direction: column;
+}
+.footericon{
+	width: 70px;
+	display: block;
+	margin: 0 auto;
+}
+.footertekst{
+	color: #ece8dd;
+	text-align: center;
+	width: 100%;
+  text-decoration: none;
+}
+.footertekst2{
+	color: #ece8dd;
+	text-align: center;
+	width: 100%;
+	padding-bottom: 10%;
+}
+.borderline2{
+	height: 2px;
+	width: 90%;
+	background: -webkit-linear-gradient(100deg, #ceac68, #8D4F00, #ceac68, #8D4F00, #ceac68);
+  margin: 5% auto 5% auto;
+}
+.dataforordning{
+	color: #ece8dd;
+	text-decoration: none;
+}
+
+/* ------------------ index ---------------- */
+.forsidebillede{
+	background-image: url("../img/forside.jpg");
+	background-position: center;
+	height: 510px;
+	background-size: cover;
+}
+.forsidebilledetekst{
+	padding-top: 160px;
+}
+.salonnavn{
+	font-size: 74px;
+	margin: 5px;
+}
+.bookbutton{
+	border: 1px solid #ece8dd;
+	background-color: transparent;
+	font-size: 20px;
+	color: #ece8dd;
+	padding: 10px 15px 10px 15px;
+	display: block;
+	font-family: times new roman;
+	margin: 7px auto 0 auto;
+  width: 137px;
+}
+.bookbuttona{
+  text-decoration: none;
+}
+.borderline{
+	height: 5px;
+	width: 100%;
+	margin-bottom: 14px;
+  background: -webkit-linear-gradient(100deg, #ceac68, #8D4F00, #ceac68, #8D4F00, #ceac68);
+}
+.flexboxkategori{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 14px;
+	background-color: #1c1c1c;
+	width: 290px;
+	margin: auto;
+}
+.flexboxicons{
+	width: 130px;
+	border: 1px solid #ceac68;
+	margin-bottom: 14px; 
+}
+.om_salonen{
+	background-color: #ece8dd;
+	padding: 14px;
+}
+.omsalonentekst{
+	max-width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.profilbilledeanton{
+	width: 250px;
+	border: 2px solid #ceac68;
+	display: block;
+	margin: auto;
+	margin-bottom: 14px;
+}
+.citataf{
+	font-style: italic;
+	color: #1c1c1c;
+	text-align: right;
+	padding-right: 10%;
+}
+
+/* ---------------- booking ------------------ */
+.container-booking {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.background-booking {
+  background-color: #ece8dd;
+  margin-top: auto;
+}
+.ring-button {
+  justify-content: center;
+  color: #1c1c1c;
+  background-color: #ccaa66;
+  font-size: 15px;
+  border: none;
+  padding: 10px 10px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.glemt-kode {
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+input[type="text"],
+input[type="password"] {
+  width: 90%;
+  padding: 15px;
+  margin: 5% 0 5% 0;
+  display: inline-block;
+  border: 2px solid #ccaa66;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: rgb(240, 240, 240);
+  outline: none;
+}
+.registerbtn {
+  justify-content: center;
+  color: #1c1c1c;
+  background-color: #ccaa66;
+  font-size: 15px;
+  border: none;
+  padding: 10px 10px;
+  margin-bottom: 240px;
+  margin-top: 30px;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.registerbtn:hover {
+  opacity: 1;
+}
+.signin {
+  text-align: center;
+}
+.ring-tekst{
+	text-align: center;
+}
+
+/* -------------- om salonen --------------- */
+.om{
+  background-color: #ece8dd;
+  height: 100%;
+}
+.portfoliosektion{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.portfolio{
+  padding: 10px;
+}
+.slideshow-container {
+  width: 90%;
+  position: relative;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+.slideshowbillede{
+  border: 3px solid #ccaa66;
+  width: 100%;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: #eeaa68;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.mySlides{
+  display: none;
+}
+.mySlides:first-child{
+  display: block;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #ccaa66;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #fff;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* ------------- produkter  ----------------*/
+.main_produkter{
+  background-color: #ece8dd;
+}
+.cover_image{
+  background-image: url("../img/cover\ billede.png");
+  background-position: center;
+  height: 410px;
+  background-size: cover;
+}
+.borderline_products{
+  height: 5px;
+  width: 100%;
+  margin-bottom: 14px;
+  background: -webkit-linear-gradient(100deg, #ceac68, #8D4F00, #ceac68, #8D4F00, #ceac68);
+}
+.products_logos{
+  width: 35%;
+  margin: 1rem 0 1rem 0;
+  padding: 1rem;
+}
+.center_icons{
+  text-align: center;
+}
+
+/* ---------------- priser --------------- */
+.main_behandlinger, .behandlinger{
+    color: black;
+    background-color: #ece8dd;
+    height: 100%;
+    width: 100%;
+}
+.behandling_overskrift{
+    font-size: 60px;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.behandling_underoverskrift {
+    font-size: 40px;
+    text-align: center;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    color: #1c1c1c;
+}
+.behandlingbilleder {
+    display: grid;
+    width: 200px;
+    margin: 50px auto 10px auto;
+    border: 2px solid #ceac68; 
+}
+.tabel {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    border-spacing: 2px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.tabel_body{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.tabel_sektion {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.tabel_celle{
+    display: table-cell;
+    vertical-align: inherit;
+    font-size: 20px;
+    padding-bottom: 10px;
+    width: 80%;
+}
+.tabel_celle_kr{
+    display: table-cell;
+    vertical-align: inherit;
+    font-size: 20px;
+    padding-bottom: 10px;
+    float: right;
+}
+.tabel_celle_vask_kr{
+    display: table-cell;
+    vertical-align: inherit;
+    font-size: 20px;
+    padding-bottom: 10px;
+    float: right;
+}
+
+/* -------------- media query tablet --------------- */
+@media screen and (max-width: 950px) and (min-width: 672px){
+    .logo{
+    	width: 70px;
+    	padding: 10px;
+    	float: left;
+    }
+    .header{
+    	height: 90px;
+    }
+    .menutekst{
+    	font-size: 18px;
+    	padding-top: 18px;
+    }
+    .topnav a.icon {
+      	display: none;
+    }
+    .nav_section{
+    	margin-bottom: 40px;
+    	right: 0;
+    }
+    .topnav {
+    	width: 100%;
+    	overflow: auto;
+    	position: absolute;
+    	top: 0;
+    	background-color: transparent;
+    }
+    .topnav a{
+    	display: block;
+    	float: right;
+    	padding: 20px 10px 20px 20px;
+    }
+    li:first-child{
+    	padding-top: 0;
+    }
+    .page_footer{
+    	flex-direction: row;
+    	align-items: unset;
+    	justify-content: space-around;
+    }
+    .footer_sektion{
+    	font-size: 1.5rem;
+    	text-align: left;
+    }
+    .footericon{
+    	padding-bottom: 20px;
+    }
+    h6{
+    	padding-bottom: 2%;
+    }
+    p{
+    	padding-top: 2%;
+    }
+    .flexboxkategori{
+    	width: 480px;
+    	margin-left: auto;
+    	margin-right: auto;
+    	padding: 14px 14px 0 14px;
+    }
+    .flexboxicons{
+    }
+    .om_salonen{
+    	background-color: #ece8dd;
+    	padding: 14px 5% 14px 5%;
+    	display: flex;
+    	flex-direction: row;
+    	justify-content: space-evenly;
+    	flex-wrap: wrap;
+    	align-items: center;
+    }
+    .profilbilledeanton{
+    	float: left;
+    	margin: 0;
+    }
+    .omsalonenoverskrift{
+    	text-align: left;
+    	margin: 0;
+    }
+    .omsalonentekst{
+    	text-align: left;
+    	width: 350px;
+    }
+    .ring-tekst{
+      text-align: center;
+    }
+    .ring-button{
+      width: 20%;
+      margin-left: 40%;
+      margin-right: 40%;
+    }    
+    .registerbtn{
+      width: 20%;
+      margin-left: 40%;
+      margin-right: 40%;
+      margin-bottom: 100px;
+    }
+    input[type="text"],
+    input[type="password"]{
+      width: 90%;
+      margin: 2% 3% 2% 3%;
+    }
+    .tabel {
+      display: table;
+      border-collapse: separate;
+      box-sizing: border-box;
+      border-spacing: 2px;
+    }
+    .tabel_celle_vask_kr{
+      display: table-cell;
+      vertical-align: inherit;
+      font-size: 25px;
+      padding: 0px 5px 10px 10px;
+    }
+    .tabel_celle{
+      display: table-cell;
+      vertical-align: inherit;
+      font-size: 25px;
+      padding: 0px 0px 10px 50px
+    }
+    .tabel_celle_vask_kr{
+      display: table-cell;
+      vertical-align: inherit;
+      font-size: 25px;
+    }
+    .main_behandlinger, .behandlinger{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row 
+    }
+    .container_klip, .container_permanent {
+      flex: 1 1 45%;
+      height: 100%;
+      border-right: 2px solid #ceac68;
+      width: 200px;
+      margin-bottom: 20px;
+    }
+    .container_farve {
+      flex: 1 1 45%;
+      height: 100%;
+      border-left: 2px solid #ceac68;
+      width: 200px;
+      margin-bottom: 20px;
+    }
+    .container_bryn_vipper, .container_vask, .container_hårkur{
+      flex: 1 1 45%;
+      height: 100%;
+      width: 200px;
+      margin-bottom: 20px;
+    }
+    .products_logos{
+      width: 15%;
+      flex-direction: column;
+      padding-left: 3rem;
+      opacity: 0.8;
+      cursor: pointer;
+      }
+    .cover_image {
+      height: 510px;
+      background-size: cover;
+      }
+    .slideshow-container {
+      width: 40%;
+      margin-left: 30%;
+      margin-right: 30%;
+    }
+}
+
+/* ------- media query (ipad pro +) laptop --------- */
+@media screen and (min-width: 950px){
+    .logo{
+    	width: 100px;
+    	padding: 10px;
+    	float: left;
+    }
+    .header{
+    	height: 120px;
+    }
+    .menutekst{
+    	font-size: 22px;
+    	padding-left: 30px;
+    	padding-top: 30px;
+    }
+    .topnav a.icon {
+      	display: none;
+    }
+    .nav_section{
+    	margin-bottom: 40px;
+    	right: 0;
+    }
+    .topnav {
+    	width: 100%;
+    	overflow: auto;
+    	position: absolute;
+    	top: 0;
+    	background-color: transparent;
+    }
+    .topnav a{
+    	display: block;
+    	float: right;
+    	padding: 20px 10px 20px 20px;
+    }
+    li:first-child{
+    	padding-top: 0;
+    }
+    .forsidebillede{
+    	height: 710px;
+    	background-size: cover;
+    }
+    .forsidebilledetekst{
+    	padding-top: 250px;
+    }
+    .salonnavn{
+    	font-size: 100px;
+    }
+    h2, .bookbottun{
+    	font-size: 35px;
+    }
+    .page_footer{
+    	flex-direction: row;
+    	align-items: unset;
+    	justify-content: space-around;
+    }
+    .footer_sektion{
+    	font-size: 1.5rem;
+    	text-align: left;
+    }
+    .footericon{
+    	padding-bottom: 20px;
+    }
+    p{
+    	padding-top: 2%;
+    }
+    .flexboxkategori{
+    	width: 900px;
+    	margin-left: auto;
+    	margin-right: auto;
+    	padding: 14px 14px 0 14px;
+    }
+    .om_salonen{
+    	background-color: #ece8dd;
+    	padding: 14px 5% 14px 5%;
+    	display: flex;
+    	flex-direction: row;
+    	justify-content: space-evenly;
+    	flex-wrap: wrap;
+    	align-items: center;
+    }
+    .profilbilledeanton{
+    	float: left;
+    	margin: 0;
+    }
+    .omsalonenoverskrift{
+    	text-align: left;
+    	margin: 0;
+    }
+    .omsalonentekst{
+    	text-align: left;
+    	width: 500px;
+    }
+    .borderline2{
+    	margin: 2% auto 2% auto;
+    }
+    h6{
+    	padding: 0 10% 2% 10%;
+    }
+    .ring-tekst {
+      text-align: center;
+    }
+    .ring-button {
+      width: 20%;
+      margin-left: 40%;
+      margin-right: 40%;
+    }
+    .registerbtn {
+      width: 20%;
+      margin-left: 40%;
+      margin-right: 40%;
+      margin-bottom: 220px;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 50%;
+      margin: 3% 23% 3% 23%;
+    }
+    .tabel {
+      display: table;
+      border-collapse: separate;
+      box-sizing: border-box;
+      border-spacing: 2px;
+      padding-left: 10px;
+    }
+    .tabel_celle_vask_kr{
+      display: table-cell;
+      vertical-align: inherit;
+      font-size: 25px;
+      padding: 0% 5% 10px 10%;
+    }
+    .tabel_celle{
+      display: table-cell;
+      vertical-align: inherit;
+      font-size: 25px;
+      padding: 0% 0% 10px 2%;
+    }
+    .behandlinger{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    .behandlinger > .container_bryn_vipper, .container_hårkur, .container_permanent {
+      flex: 1 1 30%;
+      width: 200px;
+      height: 600px;
+      border-left: 2px solid #ceac68;
+      margin-bottom: 20px;
+    }
+    .behandlinger >.container_klip, .container_vask {
+      flex: 1 1 30%;
+      width: 200px;
+      height: 600px;
+      margin-bottom: 20px;
+    }
+    .behandlinger > .container_farve {
+      flex: 1 1 30%;
+      width: 200px;
+      margin-bottom: 20px;
+      height: 1145px;
+      border-left: 2px solid #ceac68;
+    }
+    .tabel_celle_vask_kr{
+      display: table-cell;
+      vertical-align: inherit;
+      font-size: 25px;
+      padding: 0px 150px 10px 200px;
+    }
+    .cover_image{
+      height: 650px;
+      background-size: cover;
+    }
+    .products_logos{
+      width: 12%;
+      flex-direction: column;
+      padding-left: 3rem;
+    }
+    .products_logos{ 
+      transition: transform .2s;
+    }
+    .products_logos:hover{
+      -ms-transform: scale(1.2); /* IE 9 */
+      -webkit-transform: scale(1.2); /* Safari 3-8 */
+      transform: scale(1.2); 
+    }
+    .slideshow-container {
+      width: 40%;
+      margin-left: 30%;
+      margin-right: 30%;
+    }
+}
